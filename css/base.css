@@ -67,12 +67,9 @@ header{
 #header{
     font-weight: 500;
 }
-#titulo{
-    font-weight: 800;
-    font-size: xx-large;
-}
-#subtitulo01{
+.subtitulo01{
     font-weight: 700;
+    font-size: 24.5px;
 }
 #subtitulo02{
     font-weight: 600;
@@ -84,4 +81,15 @@ header{
 .datas{
     font-size: 25px;
     font-weight: 600;
+}
+
+@media(max-width: 768px){
+    header{
+        height: 25px;
+        padding-top: 8px;
+    }
+    .datas{
+        font-size: 19px;
+    }
+
 }

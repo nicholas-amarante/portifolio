@@ -4,30 +4,11 @@
     color: black;
     font-size: 18px;
     justify-content: flex-end;
-    margin: 0 30px 0 0;
+    margin: auto 10px;
     transition: all 0.5s ease;
 }
 .header:hover{
     scale: 105%;
-}
-.bloco{
-    scroll-margin-top: 100px;
-}
-
-
-.box-central{
-    width: 80%  ;
-    min-height: 300px;
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.colunas>div>*{
-    margin-bottom: 10px;
-}
-#coluna01>div{
-    width: 450px;
 }
 #imagem{
     display: flex;
@@ -40,10 +21,34 @@
     height: 200px;
     border-radius: 50%;
 }
+.bloco{
+    scroll-margin-top: 100px;
+}
+
+
+.box-central{
+    width: 80%  ;
+    max-width: 940px;
+    min-height: 200px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.colunas{
+    width: 100%;
+    max-width: 470px;
+    justify-items: center;
+    margin: 15px 0;
+}
+.colunas>div>*{
+    margin-bottom: 20px;
+}
 #botao01{
     display: flex;
     flex-direction: column;
-    width: 10vw;
+    width: 90%;
     height: 5vh;
     margin: auto;
 }
@@ -57,11 +62,8 @@
     width: 100%;
     max-width: 940px;
     display: flex;
-    margin: auto;
-    flex-direction: column;
-}
-.centro02{
     margin: 80px auto 0 auto;
+    flex-direction: column;
 }
 .datasEspaco{
     margin: 20px 0 0 0;
@@ -109,4 +111,60 @@
 .boxLinks>a:hover{
     scale: 105%;
     transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .bloco{
+        scroll-margin-top: 50px;
+    }
+    .header{
+        z-index: 1000;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        margin: auto 2px;
+        justify-content: flex-end;
+        transition: all 0.5s ease;
+    }
+    #imagem{
+        margin: 0;
+        height: 320px;
+    }
+    #imagem>img{
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .colunas>div>*{
+        margin-bottom: 5px;
+    }
+    #titulo{
+        font-size: 15px;
+    }
+
+    .centro02{
+        width: 100%;
+        max-width: 940px;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+    .centro02>div{
+        margin: auto 30px;
+    }
+    .datasEspaco{
+        margin: 10px 0 0 0;
+    }
+    #resumo{
+        margin: 20px 0 10px 0;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    #textoResumo{
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(172, 172, 255, 0.219);
+}
 }
