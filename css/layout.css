@@ -80,10 +80,86 @@
 #textoResumo{
     width: 70%;
     padding: 10px;
+    font-size: 19px;
     border-radius: 10px;
     background-color: rgba(172, 172, 255, 0.219);
 }
+.box-habilidade{
+    width: 100%;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.sub-habilidade{
+    font-size: 16px;
+    font-weight: 700;
+    color: #404658;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.habilidade-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.badge{
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Red Hat Text", sans-serif;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #404658;
+    border: 1px solid rgba(64, 70, 88, 0.2);
+    transition: all 0.3s ease;
+    cursor: default;
+    white-space: nowrap;
+    display: inline-flex;
+    margin: 5px 0;
+}
+.badge-princial{
+    background-color: #404658; 
+    color: #ffffff;
+    border: 1px solid #404658;
+}
+.badge:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #8A96BE;
+    color: #ffffff;
+    border-color: #8A96BE;
+}
 
+
+.box-projetos{
+    width: 100%;
+    max-width: 940px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.elementos-projetos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.elementos-projetos>a{
+    font-size: 20px;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(226, 70, 13);;
+    transition: all 0.5s ease;
+}
+.elementos-projetos>a:hover{
+    scale: 101%;
+    color: coral;
+}
+.elementos-projetos>p{
+    font-size: 15px;
+    margin: 5px 0 0 10px;
+}
 
 
 .boxLinks{
@@ -144,16 +220,12 @@
     }
 
     .centro02{
-        width: 100%;
-        max-width: 940px;
-        display: flex;
         margin: auto;
-        flex-direction: column;
     }
     .centro02>div{
         margin: auto 30px;
     }
-    .datasEspaco{
+    .texto-data{
         margin: 10px 0 0 0;
     }
     #resumo{
@@ -164,7 +236,14 @@
     #textoResumo{
     width: 80%;
     padding: 8px;
+    font-size: 15.5px;
     border-radius: 10px;
     background-color: rgba(172, 172, 255, 0.219);
-}
+    }
+    .sub-habilidade{
+        margin: 10px;
+    }
+    .badge{
+        margin: 0 0 4px 0;
+    }
 }
