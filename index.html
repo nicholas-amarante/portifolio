@@ -9,21 +9,27 @@
 </head>
 <body>
     <header>
-        <a href="#inicio" class="header fonte">Inicio</a>
+        <a href="#inicio" class="menu-desk fonte">Inicio</a>
         <p class="fonte header"> | </p>
-        <a href="#resumo" class="header fonte">Resumo/Experiencias</a>
+        <a href="#resumo" class="menu-desk fonte">Resumo/Experiencias</a>
         <p class="fonte header"> | </p>
-        <a href="#projetos" class="header fonte">Projetos</a>
+        <a href="#projetos" class="menu-desk fonte">Projetos</a>
         <p class="fonte header"> | </p>
-        <a href="#contatos" class="header fonte">Contatos/Links</a>
+        <a href="#contatos" class="menu-desk fonte">Contatos/Links</a>
         <p class="fonte header"> | </p>
     </header>
+    <nav class="menu-mobile">
+        <a href="#inicio" class="header fonte"><img src="assets/images/house.png" alt=""></a>
+        <a href="#resumo" class="header fonte"><img src="assets/images/profile.png" alt=""></a>
+        <a href="#projetos" class="header fonte"><img src="assets/images/list.png" alt=""></a>
+        <a href="#contatos" class="header fonte"><img src="assets/images/mail.png" alt=""></a>
+    </nav>
     <main class="scroll">
         <section id="inicio" class="bloco">
             <div id="imagem">
-                <img src="./assets/images/uiui.jpg" alt="">
+                <img src="./assets/images/nicholas.jpg" alt="">
             </div>
-            <div class="box-central">
+            <div class="box-inicial">
                 <div class="colunas">
                     <div>
                         <h2 class="fonte subtitulo01">Olá, eu sou Nicholas Felipe</h2>
@@ -43,16 +49,16 @@
             </div>
         </section>
         <section id="resumo" class="bloco">
-            <div class="centro02">
+            <div class="box-experiencias">
                 <div>
                     <p class="fonte texto-data">Inicio da Graduacao:</p>
                     <p class="fonte datas">08/2023</p>
                     <p class="fonte texto-data ">Previsao de termino:</p>
                     <p class="fonte datas">02/2027</p>
                 </div>
-                <div class="centro02 fonte boxResumo">
+                <div class="box-experiencias fonte box-resumo">
                     <p id="resumo">Resumo:</p>
-                    <p id="textoResumo">
+                    <p id="texto-resumo">
                         Sou estudante já na reta final do curso, e focado em me tornar um desenvolvedor Fullstack. 
                         Minha base principal é o back-end contruindo a lógica das coisas usando Java e Spring Boot, e 
                         modelando os dados com PostgreSQL. <br> Para entregar aplicações de ponta a ponta, venho mergulhando 
@@ -83,10 +89,37 @@
         <section id="projetos" class="bloco">
             <div class="box-projetos">
                 <div class="elementos-projetos">
-                    <a href="https://github.com/nicholas-amarante/Finance-System" class="fonte">Finance-System</a>
-                    <p class="fonte">Sistema para gerenciamento financeiro pessoal | Projeto pessoal</p>
-                    <p class="fonte">Java e Spring Boot</p>
+                    <a href="https://github.com/nicholas-amarante/Finance-System" class="fonte">Byte Finance <img src="assets/images/arrow-orange.png" alt="" class="arrow-orange"></a>
+                    <p class="fonte">API de sistema para gerenciamento financeiro pessoal</p>
+                    <ul>
+                        <li class="fonte">Java</li>
+                        <li class="fonte">Spring Boot</li>
+                        <li class="fonte">PostgreSQL</li>
+                        <li class="fonte">Docker</li>
+                    </ul>
                 </div>
+                <div class="elementos-projetos">
+                    <a href="" class="fonte">Byte Finance(web) <img src="assets/images/arrow-orange.png" alt="" class="arrow-orange"></a>
+                    <p class="fonte">Interface de usuario para o projeto <a href="">Finance-System</a></p>
+                    <ul>
+                        <li class="fonte">TypeScript</li>
+                        <li class="fonte">React</li>
+                        <li class="fonte">Vite</li>
+                        <li class="fonte">TailWind</li>
+                    </ul>
+                </div>
+                <div class="elementos-projetos">
+                    <a href="" class="fonte">Consulta de Passagens Aéreas <img src="assets/images/arrow-orange.png" alt="" class="arrow-orange"></a>
+                    <p class="fonte">CRUD com autenticação para sistema de passagens aéreas</p>
+                    <ul>
+                        <li class="fonte">JavaScript</li>
+                        <li class="fonte">Node.js</li>
+                        <li class="fonte">Express</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="botao-git">
+                <a href="https://github.com/nicholas-amarante" class="fonte">Github Completo <img src="assets/images/arrow.svg" alt="" class="arrow-white"></a>
             </div>
         </section>
         <section id="contatos" class="bloco">

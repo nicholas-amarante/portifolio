@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     /*outline: 1px solid red !important;*/
+    -webkit-tap-highlight-color: transparent;
 }
 :root{
     --exemplo: green
@@ -18,7 +19,7 @@ html{
 }
 body{
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(to bottom left, #e4ecf5, #c9dcff);
     position: relative;
     overflow-x: hidden;
@@ -46,17 +47,19 @@ header{
 }
 .scroll{
     height: 100%;
-    min-height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y proximity;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .bloco{
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     scroll-snap-align: start;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 100px;
 }
 
 
@@ -88,11 +91,13 @@ header{
 
 @media(max-width: 768px){
     header{
-        height: 25px;
-        padding-top: 8px;
+        display: none;
     }
     .datas{
         font-size: 19px;
+    }
+    .bloco{
+        scroll-margin-top: 20px;
     }
 
 }
