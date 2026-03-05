@@ -27,7 +27,7 @@ header{
     width: clamp(80px, 18vh, 200px);
     border-radius: 50%;
 }
-
+/*--------------------INICIAL--------------------*/
 
 .box-inicial{
     width: 80%;
@@ -41,8 +41,7 @@ header{
 }
 .colunas{
     width: 100%;
-    max-width: 470px;
-    justify-items: right;
+    max-width: 400px;
     margin: 15px 0;
 }
 .colunas>div>*{
@@ -52,7 +51,7 @@ header{
     width: 12px;
     margin: 0 0 -2px 5px;
 }
-
+/*--------------------RESUMO--------------------*/
 
 .box-experiencias{
     width: 100%;
@@ -113,7 +112,7 @@ header{
     color: #ffffff;
     border-color: #8A96BE;
 }
-
+/*--------------------PROJETOS--------------------*/
 
 .box-projetos{
     width: 100%;
@@ -138,7 +137,7 @@ header{
     font-size: clamp(15px, 2.1vh, 25px);
     height: 30px;
     text-decoration: none;
-    color: rgb(226, 70, 13);;
+    color: rgb(226, 70, 13);
     transition: all 0.5s ease;
     width: 100%;
     max-width: 300px;
@@ -193,7 +192,7 @@ header{
     margin: 0 0 -2px 5px;
 }
 
-
+/*--------------------CONTATOS--------------------*/
 .secao-contato {
     display: flex;
     justify-content: center;
@@ -355,6 +354,7 @@ header{
         background-color: #ffffff5b;
         box-shadow: 0 -2px 10px rgba(6, 255, 255, 0.1);
         z-index: 1000; 
+        border-radius: 30px 30px 0 0;
     }
     .menu-mobile>a{
         color: #404658;

@@ -20,6 +20,54 @@
     transform: translateY(-3px);
 }
 
+.container-button {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    user-select: none;
+    fill: var(--color-text);
+}
+
+.container-button .moon {
+    position: absolute;
+    animation: keyframes-fill .5s;
+}
+
+.container-button .sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+}
+
+.container-button input:checked ~ .moon {
+    display: none;
+}
+
+.container-button input:checked ~ .sun {
+    display: block;
+}
+
+.container-button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+@keyframes keyframes-fill {
+    0% {
+        transform: rotate(-360deg) scale(0);
+        opacity: 0;
+    }
+
+    75% {
+        transform: rotate(25deg);
+    }
+}
+
 @media(max-width: 768px){
     #botao01{
         margin: 0 auto;

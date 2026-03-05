@@ -34,16 +34,21 @@ body::before{
     pointer-events: none;
 }
 header{
-    width: 100%;
-    height: 30px;
-    padding: 5px;
-    position: fixed;
-    justify-content: flex-end;
-    display: flex;
+    width: 18%;
+    height: 40px;
+    padding: 0 45px;
+    border-radius: 50px;
     z-index: 1000;
+
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.281);
 }
 .scroll{
     height: 100%;
@@ -83,7 +88,7 @@ header{
     font-weight: 500;
 }
 #intro{
-    width: 75%;
+    width: 85%;
     font-size: clamp(13px, 4vw, 20px);
 }
 .texto-data{
