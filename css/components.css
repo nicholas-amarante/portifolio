@@ -1,3 +1,63 @@
+.fonte{
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    color: var(--mono);
+}
+.fonte-menu{
+    color: var(--cor-fonte-menu);
+}
+.fonte-inicio{
+    color: var(--cor-fonte-inicio);
+}
+.subtitulo01{
+    font-weight: 700;
+    color: var(--cor-subtitulo01);
+    font-size: clamp(10px, 3vh, 25px);
+}
+.fonte-resumo{
+    color: var(--cor-texto-resumo);
+}
+.texto-data{
+    color: var(--cor-texto-data);
+    font-size: clamp(15px, 3vh, 25px);
+    font-weight: 600;
+}
+.datas{
+    font-size: clamp(10px, 2.5vh, 20px);
+}
+#header{
+    font-weight: 500;
+}
+.competencia01{
+    font-weight: 600;
+    font-size: clamp(13px, 4vw, 20px);
+}
+.competencia02{
+    font-size: clamp(12px, 3.5vw, 19px);
+    font-weight: 500;
+}
+#intro{
+    width: 85%;
+    font-size: clamp(13px, 4vw, 20px);
+}
+
+#resumo{
+    font-size: clamp(15px, 3vh, 25px);
+    font-weight: 600;
+    margin: 50px 0 10px 0;
+}
+#texto-resumo{
+    font-size: clamp(10px, 2vh, 100px);
+}
+.sub-habilidade{
+    font-size: clamp(5px, 2vh, 16px);
+    font-weight: 700;
+    color: #404658;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 #botao01{
     display: flex;
     flex-direction: column;
@@ -9,16 +69,18 @@
     text-decoration: none;
     margin: auto;
     padding: 10px;
-    background-color: rgb(89, 66, 219);
+    background-color: var(--bg-botao-inicio);
     border-radius: 7px;
     color: white;
     transition: all 0.5s ease;
 }
 #botao01>a:hover{
-    background-color: rgb(64, 47, 158);
+    background-color: var(--bg-botao-inicio-hover);
     scale: 110%;
     transform: translateY(-3px);
 }
+
+/*----------Botao-TEMA----------*/
 
 .container-button {
     width: 20px;
@@ -67,6 +129,8 @@
         transform: rotate(25deg);
     }
 }
+
+/*----------CELULAR----------*/
 
 @media(max-width: 768px){
     #botao01{

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url(main.css);
 @font-face {
     font-family: "Lexend";
     src: url(../assets/fonts/Lexend-VariableFont_wght.ttf);
@@ -12,7 +13,51 @@
     -webkit-tap-highlight-color: transparent;
 }
 :root{
-    --exemplo: green
+    --bg-principal: linear-gradient(to bottom left, #e4ecf5, #c9dcff);
+    --mono: black;
+
+    --cor-fonte-menu-desk: #2d3542;
+    --bg-menu-desk: rgba(255, 255, 255, 0.281);
+
+    --cor-fonte-inicio: black;
+    -cor-subtitulo01: black;
+
+    --bg-botao-inicio: rgb(89, 66, 219);
+    --bg-botao-inicio-hover: rgb(64, 47, 158);
+    /*----------RESUMO----------*/
+    --cor-texto-resumo: rgba(0, 0, 0, 0.664);
+    --cor-texto-data: rgba(22, 22, 22, 0.938);
+    --bg-caixa-resumo: rgba(172, 172, 255, 0.219);
+    --cor-texto-badge: #404658;
+    --bg-badge: rgba(255, 255, 255, 0.4);
+    --cor-borda-badge: rgba(64, 70, 88, 0.2);
+    --shadow-badge-hover: rgba(0, 0, 0, 0.1);
+    --bg-badge-hover: #8A96BE;
+    --cor-badge-hover: #ffffff;
+    --border-cor-badge: #8A96BE;
+    --bg-badge-principal: #404658;
+    --cor-badge-principal: #ffffff;
+    --border-badge-principal: #404658;
+    /*----------PROJETOS----------*/
+    --cor-texto-titulo-projetos: rgb(226, 70, 13);
+    --cor-texto-titulo-projetos-hover: coral;
+    --cor-link-finance: indianred;
+}
+body.dark-mode{
+    /*--bg-principal: linear-gradient(to bottom left, #1e293b, #0f172a);*/
+    /*--bg-principal: linear-gradient(to bottom left, #1a1e29, #10141d);*/
+    --bg-principal: linear-gradient(to bottom left, #232946, #121420);
+    --mono: white;
+
+    --cor-fonte-menu-desk: #20252e;
+    --bg-menu-desk: #d4e3ff;
+
+    --cor-fonte-inicio: rgb(255, 255, 255);
+    --cor-subtitulo01: rgba(255, 255, 255, 0.822);
+    /*----------RESUMO----------*/
+    --cor-texto-resumo: rgba(236, 236, 255, 0.836);
+    --cor-texto-data: rgba(255, 255, 255, 0.938);
+    --bg-caixa-resumo: rgba(92, 92, 129, 0.219);
 }
 html{
     scroll-behavior: smooth;
@@ -20,7 +65,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom left, #e4ecf5, #c9dcff);
+    background: var(--bg-principal);
     position: relative;
     overflow-x: hidden;
     display: block;
@@ -41,14 +86,14 @@ header{
     z-index: 1000;
 
     position: fixed;
-    top: 10px;
+    top: 15px;
     right: 40px;
     justify-content: center;
     align-items: center;
     display: flex;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.281);
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
+    background-color: var(--bg-menu-desk);
 }
 .scroll{
     height: 100%;
@@ -68,51 +113,7 @@ header{
 }
 
 
-.fonte{
-    font-family: "Red Hat Text", sans-serif;
-    font-weight: 500;
-}
-#header{
-    font-weight: 500;
-}
-.subtitulo01{
-    font-weight: 700;
-    font-size: clamp(10px, 3vh, 25px);
-}
-.competencia01{
-    font-weight: 600;
-    font-size: clamp(13px, 4vw, 20px);
-}
-.competencia02{
-    font-size: clamp(12px, 3.5vw, 19px);
-    font-weight: 500;
-}
-#intro{
-    width: 85%;
-    font-size: clamp(13px, 4vw, 20px);
-}
-.texto-data{
-    font-size: clamp(15px, 3vh, 25px);
-    font-weight: 600;
-}
-.datas{
-    font-size: clamp(10px, 2.5vh, 20px);
-}
-#resumo{
-    font-size: clamp(15px, 3vh, 25px);
-    font-weight: 600;
-    margin: 50px 0 10px 0;
-}
-#texto-resumo{
-    font-size: clamp(10px, 2vh, 100px);
-}
-.sub-habilidade{
-    font-size: clamp(5px, 2vh, 16px);
-    font-weight: 700;
-    color: #404658;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+
 
 @media(max-width: 768px){
     header{
