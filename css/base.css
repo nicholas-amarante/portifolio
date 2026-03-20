@@ -29,6 +29,7 @@
     --cor-texto-data: rgba(22, 22, 22, 0.938);
     --bg-caixa-resumo: rgba(172, 172, 255, 0.219);
     --cor-texto-badge: #404658;
+    --cor-sub-habilidade: #404658;
     --bg-badge: rgba(255, 255, 255, 0.4);
     --cor-borda-badge: rgba(64, 70, 88, 0.2);
     --shadow-badge-hover: rgba(0, 0, 0, 0.1);
@@ -58,6 +59,10 @@ body.dark-mode{
     --cor-texto-resumo: rgba(236, 236, 255, 0.836);
     --cor-texto-data: rgba(255, 255, 255, 0.938);
     --bg-caixa-resumo: rgba(92, 92, 129, 0.219);
+    --bg-badge: rgb(49, 90, 124);
+    --bg-badge-principal: white;
+    --cor-badge-principal: black;
+    --cor-texto-badge: white;
 }
 html{
     scroll-behavior: smooth;
@@ -87,13 +92,23 @@ header{
 
     position: fixed;
     top: 15px;
-    right: 40px;
+    right: 90px;
     justify-content: center;
     align-items: center;
     display: flex;
     backdrop-filter: blur(10px);
     /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
     background-color: var(--bg-menu-desk);
+}
+label{
+    
+    position: fixed;
+    top: 25px;
+    right: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: flex;
 }
 .scroll{
     height: 100%;
@@ -124,5 +139,9 @@ header{
     }
     #resumo{
         margin: 20px 0 10px 0;
+    }
+    label{
+        top: 15px;
+        right: 8px;
     }
 }

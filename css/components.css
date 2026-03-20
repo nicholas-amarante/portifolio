@@ -52,7 +52,6 @@
 .sub-habilidade{
     font-size: clamp(5px, 2vh, 16px);
     font-weight: 700;
-    color: #404658;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -89,7 +88,7 @@
     padding: 0 15px;
     cursor: pointer;
     user-select: none;
-    fill: var(--color-text);
+    fill: var(--mono);
 }
 
 .container-button .moon {
