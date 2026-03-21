@@ -15,6 +15,7 @@
 :root{
     --bg-principal: linear-gradient(to bottom left, #e4ecf5, #c9dcff);
     --mono: black;
+    --bg-menu-mobile: #ffffff5b;
 
     --cor-fonte-menu-desk: #2d3542;
     --bg-menu-desk: rgba(255, 255, 255, 0.281);
@@ -43,12 +44,16 @@
     --cor-texto-titulo-projetos: rgb(226, 70, 13);
     --cor-texto-titulo-projetos-hover: coral;
     --cor-link-finance: indianred;
+    --bg-botaogit: black;
+    /*----------CONTATOS----------*/
+    --border-btn: rgba(64, 70, 88, 0.3);
 }
 body.dark-mode{
     /*--bg-principal: linear-gradient(to bottom left, #1e293b, #0f172a);*/
     /*--bg-principal: linear-gradient(to bottom left, #1a1e29, #10141d);*/
     --bg-principal: linear-gradient(to bottom left, #232946, #121420);
     --mono: white;
+    --bg-menu-mobile: #ecececef;
 
     --cor-fonte-menu-desk: #20252e;
     --bg-menu-desk: #d4e3ff;
@@ -63,6 +68,15 @@ body.dark-mode{
     --bg-badge-principal: white;
     --cor-badge-principal: black;
     --cor-texto-badge: white;
+    /*----------PROJETOS----------*/
+    --cor-texto-titulo-projetos: rgb(84, 155, 248);
+    --cor-texto-titulo-projetos-hover: rgb(173, 225, 255);
+    --cor-texto-linha-atributo: rgb(216, 229, 247);
+    --cor-link-finance: rgb(164, 222, 255);
+    --bg-botaogit: rgb(80, 92, 172);
+    /*----------CONTATOS----------*/
+    --bg-btn-contato: rgb(60, 58, 77);
+    --border-btn: rgb(145, 145, 145);
 }
 html{
     scroll-behavior: smooth;
@@ -84,7 +98,7 @@ body::before{
     pointer-events: none;
 }
 header{
-    width: 18%;
+    width: 16%;
     height: 40px;
     padding: 0 45px;
     border-radius: 50px;

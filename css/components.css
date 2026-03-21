@@ -56,6 +56,10 @@
     letter-spacing: 1px;
 }
 
+.linha-atributo{
+    color: var(--cor-texto-linha-atributo);
+}
+
 
 #botao01{
     display: flex;
